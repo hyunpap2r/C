@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main_loop() {
  
     int floor;
     printf("몇 층 : ");
