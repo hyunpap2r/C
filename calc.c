@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 
 int getnum(int lv);
 void showanswer(int lv, int num1, int num2);
