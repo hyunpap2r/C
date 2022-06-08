@@ -83,18 +83,11 @@ int main() {
      int height;
 
  };
-
-    my A = {
-            "son",
-            "mid",
-            29,
-            181
-};
-
-
-    cout << A.name << endl;
-    cout << A.position << endl;
-    cout << A.age << endl;
-    cout << A.height << endl;
+        my A[2] = {
+                {"A", "A", 1, 2},
+                {"B" , "B", 3 ,4}
+        };
+        cout << A[1].age<<endl;
+    return 0;
     
     }
