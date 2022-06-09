@@ -165,5 +165,14 @@ int main() {
         // p3 = p3 - 1;
         // delete[] p3;
 
-    return 0;
+
+        // double* ddouble = new double[3];
+        // ddouble[0] = 0.3;
+        // ddouble[1] = 0.9;
+        // ddouble[2] = 1.2;
+
+        // cout << ddouble[0] <<endl;
+        cout << "its time to rest" <<endl;
+        return 0;
+
 }
