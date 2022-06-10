@@ -2,10 +2,10 @@
 // #define SIZE 20
 using namespace std;
 
-struct my{
-        char name[20];
-        int age;
-};
+// struct my{
+//         char name[20];
+//         int age;
+// };
 
 
 // #include <cstring>
@@ -180,7 +180,7 @@ int main() {
 
         // cout << ddouble[0] <<endl;
         // cout << "its time to rest" <<endl;
-
+//포인터 연산자
         // char animal[SIZE];
         // char* ps;
 
@@ -193,17 +193,42 @@ int main() {
         // cout << "입력하신 동물 이름을 복사하였습니다." << endl;
         // cout << "입력하신 동물은 " << animal <<"이고 그 주소는 " << (int*)animal <<"입니다." <<endl;
         // cout << "복사된 동물 이름은 " << ps << " 이고 그 주소는 " << (int*)ps <<"입니다." <<endl;
+//정적 구조체 접근
+                //  my* temp = new my;
+                //  cout << "당신의 이름은 ? : ";
+                //  cin >> temp -> name;
 
-                 my* temp = new my;
-                 cout << "당신의 이름은 ? : ";
-                 cin >> temp -> name;
+                //  cout << "당신의 나이는 ? :";
+                //  cin >> (*temp).age;
 
-                 cout << "당신의 나이는 ? :";
-                 cin >> (*temp).age;
+                //  cout << "안녕하세요! " << temp -> name <<"씨";
+                //  cout << " 당신은" << temp -> age<< " 살 이군요!" <<endl;  
 
-                 cout << "안녕하세요! " << temp -> name <<"씨";
-                 cout << " 당신은" << temp -> age<< " 살 이군요!" <<endl;  
+//반복문의 4가지 규칙
+//1. 반복문에 사용할 카운터의 값을 초기화
+//2. 반복문을 진행할 것인지 조건 검사
+//3. 반복문 {몸체}를 수행
+//4. 카운터의 값을 변화한다.
 
+        // for (int i = 1; i < 6; i++){
+        //         cout << i <<"번째 반복문 입니다."<<endl;
+        // }        
+
+        // int a = 10;
+        // int b = 10;
+        
+        // cout << a++ << " : a++\n";
+        // cout << ++b << " : ++b" <<endl;
+
+//while문 ,do while문
+//while(true or flase = bool형)
+//변수는 사용되기 이전에 사용되어야 한다.
+
+        int i = 0;
+        while( i < 3){
+                i ++
+                    
+        }
         return 0;
 
 }
