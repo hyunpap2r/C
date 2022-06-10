@@ -1,6 +1,13 @@
 #include <iostream>
-
+// #define SIZE 20
 using namespace std;
+
+struct my{
+        char name[20];
+        int age;
+};
+
+
 // #include <cstring>
 
         // int num = 10;
@@ -172,7 +179,31 @@ int main() {
         // ddouble[2] = 1.2;
 
         // cout << ddouble[0] <<endl;
-        cout << "its time to rest" <<endl;
+        // cout << "its time to rest" <<endl;
+
+        // char animal[SIZE];
+        // char* ps;
+
+        // cout << "동물 이름 입력 : ";
+        // cin >> animal;
+
+        // ps = new char[strlen(animal) + 1];
+        // strcpy(ps,animal);
+
+        // cout << "입력하신 동물 이름을 복사하였습니다." << endl;
+        // cout << "입력하신 동물은 " << animal <<"이고 그 주소는 " << (int*)animal <<"입니다." <<endl;
+        // cout << "복사된 동물 이름은 " << ps << " 이고 그 주소는 " << (int*)ps <<"입니다." <<endl;
+
+                 my* temp = new my;
+                 cout << "당신의 이름은 ? : ";
+                 cin >> temp -> name;
+
+                 cout << "당신의 나이는 ? :";
+                 cin >> (*temp).age;
+
+                 cout << "안녕하세요! " << temp -> name <<"씨";
+                 cout << " 당신은" << temp -> age<< " 살 이군요!" <<endl;  
+
         return 0;
 
 }
