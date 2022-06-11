@@ -224,11 +224,25 @@ int main() {
 //while(true or flase = bool형)
 //변수는 사용되기 이전에 사용되어야 한다.
 
-        int i = 0;
-        while( i < 3){
-                i ++
+        // int i = 0;
+        // while( i < 3){
+        //         i ++;
                     
-        }
-        return 0;
+        // // }
+        // int a[] = {1,3,5,7,9};
 
+//반복문 활용
+        // for (int i : a) {
+        //         cout << i << endl;
+        // }
+//if구문과 else if 구문
+        if(true){
+                cout << "조건이 참입니다.\n";
+        }
+        if(false){
+                cout << "조건이 거짓입니다.";
+        }
+        cout << "프로그램이 종료되었습니다." <<endl;
+
+        return 0;
 }
