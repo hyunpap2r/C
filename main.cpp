@@ -1,7 +1,7 @@
 #include <iostream>
 // #define SIZE 20
 using namespace std;
-
+const int SIZE = 30;
 // struct my{
 //         char name[20];
 //         int age;
@@ -236,13 +236,58 @@ int main() {
         //         cout << i << endl;
         // }
 //if구문과 else if 구문
-        if(true){
-                cout << "조건이 참입니다.\n";
+        // if(true){
+        //         cout << "조건이 참입니다.\n";
+        // }
+        // if(false){
+        //         cout << "조건이 거짓입니다.";
+        // }
+        // cout << "프로그램이 종료되었습니다." <<endl;
+//switch
+        // int a = 0;
+        // cin >> a ;
+        // switch (a)
+        // {
+        // case 1:
+        //         cout << "값은 1입니다.\n";
+        //  break;
+        
+        // case 2:
+        //         cout << "값은 2입니다.\n";
+        // break;
+
+        // case 3:
+        //         cout << "값은 3입니다.\n";
+        // break;
+
+        // default:
+        //         cout << "입력하신 값은 1,2,3 이외의 값입니다." << endl;
+        // }
+        // cout << "프로그램 종료" << endl;
+//whileans
+        // int i = 0;
+        // while (true)
+        // {
+        //         cout << "i의 값은" << i <<"입니다." << endl;
+        //         if(i > 10)
+        //                 break;
+        //         i++;
+        // }
+        cout << "문장을 일렵하세요\n" <<endl;        
+        char line[SIZE];
+        cin.get(line,SIZE);
+        cout << "입력하신 문장은\n";
+        int space = 0;
+        for (int i = 0; line[i] != '\0'; i++){
+                cout << line[i];
+
+                if(line[i] != ' ')
+                continue;
+                space++;
         }
-        if(false){
-                cout << "조건이 거짓입니다.";
-        }
-        cout << "프로그램이 종료되었습니다." <<endl;
+        cout <<"입니다.\n";
+        cout << "입력하신 문자중 공백의 갯수는" <<space <<"개 입니다.\n";
+        cout << "프로그램을 종료합니다."<<endl;
 
         return 0;
 }
