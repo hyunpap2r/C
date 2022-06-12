@@ -6,18 +6,24 @@ using namespace std;
 //         char name[20];
 //         int age;
 // };
-const float PIE = 3.14; 
+        //..함수..//
+// const float PIE = 3.14; 
 
-void cheers(int n) {
-        for (int i = 0; i < n; i++){
-                cout << "Cheers!" << endl;
-        }
-}
+// void cheers(int n) {
+//         for (int i = 0; i < n; i++){
+//                 cout << "Cheers!" << endl;
+//         }
+// }
 
-float cricle(float x) {
-        return x * x * PIE;
-}
+// float cricle(float x) {
+//         return x * x * PIE;
+// }
 
+// void print(int a) {
+//         for (int i = 0; i < a; i++){
+//                 cout << "Hello C++!\n" <<endl;
+//         }
+// }
 // #include <cstring>
 
         // int num = 10;
@@ -40,7 +46,19 @@ float cricle(float x) {
         // bool Equal(float f1, float f2, float epsilon){ 
         //     return ABs(f1 - f2) <= epsilon;
         // }
+        // const int SIZE = 8;
+        // int sumarr(int[], int);
 
+        struct Time
+        {
+                int hours;
+                int mins;
+        };
+        const int minsper = 60;
+
+        Time sum(Time*, Time*);
+        void showtime(Time);
+        
 int main() {
         // //     increase();
         // //     std::cout << num << std::endl;
@@ -298,15 +316,55 @@ int main() {
         // cout <<"입니다.\n";
         // cout << "입력하신 문자중 공백의 갯수는" <<space <<"개 입니다.\n";
         // cout << "프로그램을 종료합니다."<<endl;
-//함수의 기초
-        int a;
-        cout <<"하나의 수를 입력하시오. : "<<endl;
-        cin >> a;
-        cheers(a);
+// //함수의 기초
+        // int a;
+        // cout <<"하나의 수를 입력하시오. : "<<endl;
+        // cin >> a;
+        // cheers(a);
 
-        float(b);
-        cout <<"원의 반지름을 입력하세요." <<endl;
-        cin >> b;
-        float c =cricle(b);
-        cout << "원의 넓이는 "<< c << "입니다." <<endl;
+        // float(b);
+        // cout <<"원의 반지름을 입력하세요." <<endl;
+        // cin >> b;
+        // float c =cricle(b);
+        // cout << "원의 넓이는 "<< c << "입니다." <<endl;
+
+        // int x;
+        // cout << "반복 횟수를 정하세요." <<endl;
+        // cin >> x;
+        // print(x);
+//함수 배열
+        // int arr[SIZE] = {1, 2, 4, 8, 16, 32, 64, 128};
+        // int sum = sumarr(arr, SIZE);
+        
+        // cout << "함수의 총 합은" << sum << "입니다." <<endl;
+//함수 구조체
+        Time day1 = {4, 55};
+        Time day2 = {2, 35};
+
+        Time total = sum(&day1, &day2);
+
+        cout << "이틀간 총 소요시간";
+        showtime(total);
+        return 0;
+}
+
+// int sumarr(int arr[], int n ){
+//         int total = 0;
+
+//         for (int i = 0; i < n; i++)
+//         total += arr[i];
+
+//         return total;
+// }
+Time sum(Time* t1, Time* t2){
+        Time total;
+        //값에서 멤버 접근할 때 : .
+        //주소에서 멤버 접근할 때 : ->
+        total.mins = (t1 -> mins + t2 -> mins) % minsper;
+        total.hours = t1 -> hours + t2 -> hours + (t1 -> mins + t2 -> mins) / minsper;
+
+        return total;        
+}
+void showtime(Time t1){
+        cout << t1.hours << "시 " << t1.mins <<"분 입니다." <<endl;
 }
