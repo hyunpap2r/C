@@ -1,12 +1,22 @@
 #include <iostream>
 // #define SIZE 20
 using namespace std;
-const int SIZE = 30;
+//const int SIZE = 30;
 // struct my{
 //         char name[20];
 //         int age;
 // };
+const float PIE = 3.14; 
 
+void cheers(int n) {
+        for (int i = 0; i < n; i++){
+                cout << "Cheers!" << endl;
+        }
+}
+
+float cricle(float x) {
+        return x * x * PIE;
+}
 
 // #include <cstring>
 
@@ -272,22 +282,31 @@ int main() {
         //         if(i > 10)
         //                 break;
         //         i++;
+        // // }
+        // cout << "문장을 일렵하세요\n" <<endl;        
+        // char line[SIZE];
+        // cin.get(line,SIZE);
+        // cout << "입력하신 문장은\n";
+        // int space = 0;
+        // for (int i = 0; line[i] != '\0'; i++){
+        //         cout << line[i];
+
+        //         if(line[i] != ' ')
+        //         continue;
+        //         space++;
         // }
-        cout << "문장을 일렵하세요\n" <<endl;        
-        char line[SIZE];
-        cin.get(line,SIZE);
-        cout << "입력하신 문장은\n";
-        int space = 0;
-        for (int i = 0; line[i] != '\0'; i++){
-                cout << line[i];
+        // cout <<"입니다.\n";
+        // cout << "입력하신 문자중 공백의 갯수는" <<space <<"개 입니다.\n";
+        // cout << "프로그램을 종료합니다."<<endl;
+//함수의 기초
+        int a;
+        cout <<"하나의 수를 입력하시오. : "<<endl;
+        cin >> a;
+        cheers(a);
 
-                if(line[i] != ' ')
-                continue;
-                space++;
-        }
-        cout <<"입니다.\n";
-        cout << "입력하신 문자중 공백의 갯수는" <<space <<"개 입니다.\n";
-        cout << "프로그램을 종료합니다."<<endl;
-
-        return 0;
+        float(b);
+        cout <<"원의 반지름을 입력하세요." <<endl;
+        cin >> b;
+        float c =cricle(b);
+        cout << "원의 넓이는 "<< c << "입니다." <<endl;
 }
