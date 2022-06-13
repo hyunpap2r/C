@@ -62,6 +62,8 @@ void print(int a) {
         void countdown(int);
         int func(int);
 */
+
+        inline float square(float x) {return x * x; }
 int main() {
 /*            increase();
             std::cout << num << std::endl;
