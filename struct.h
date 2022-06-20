@@ -1,4 +1,3 @@
-#ifndef STRUCT
 #define STRUCT
 #include <iostream>
 
@@ -12,4 +11,3 @@ struct myst{
 
 void display(myst&);
 
-#endif
