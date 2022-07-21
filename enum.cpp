@@ -11,6 +11,9 @@ enum ENUM_SRP
     PAPER,
     ROCK
 };
+//#이 붙은 문법 = 전처리 지시문
+//빌드 과정 1) 전처리 2) 컴파일 3) 링크
+#define DIFINE_SCISSORS  1
 
 int main()
 {  
