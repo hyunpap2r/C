@@ -2,13 +2,22 @@
 
 using namespace std;
 
+  
+    // 값을 지정해주지 않으면 기본적으로 첫 번째 값은 0부터 시작
+     // 그 다음 값들은 이전 값 + 1
+enum ENUM_SRP 
+{
+    SCISSORS = 1,
+    PAPER,
+    ROCK
+};
+//#이 붙은 문법 = 전처리 지시문
+//빌드 과정 1) 전처리 2) 컴파일 3) 링크
+#define DIFINE_SCISSORS  1
+
 int main()
 {  
     srand(time(0));
-
-    const int SCISSORS = 1;
-    const int PAPER = 2;
-    const int ROCK = 3;
 
     int wins = 0;
     int total = 0;
@@ -112,4 +121,4 @@ int main()
     
 
     return 0;
-}
+}   
